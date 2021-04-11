@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+body {
+  background-image: url('image.jpg');
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5em 10em;
+}
+
+.form {
+  display: flex;
+  max-width: 800px;
+  gap: 2em;
+}
+
+.btn {
+  font: inherit;
+  padding: 0.5em 1em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: #8030ff;
+  color: white;
+
+  transition: filter 500ms ease;
+}
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.inp {
+  padding: 0.5em;
+  font: inherit;
+}
+
+#show {
+  margin: 1em;
+}
+
+.table {
+  border-spacing: 0px;
+  margin: 1em 0px;
+}
+
+.table td,
+th {
+  padding: 1em;
+  background-color: #f0f0f0;
+}
+.table th {
+  text-align: right;
+  padding-left: 3em;
+}
+.table td {
+  padding-right: 3em;
+}
+
+@media screen and (max-width: 800px) {
+  .form {
+    flex-direction: column;
+  }
+  .container {
+    padding: 3em 0.5em;
+  }
+  .table th {
+    padding-left: 1.5em;
+  }
+  .table td {
+    padding-right: 1.5em;
+  }
+  .btn {
+    padding: 1em;
+  }
+}
